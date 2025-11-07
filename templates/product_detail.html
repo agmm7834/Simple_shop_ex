@@ -11,7 +11,7 @@
             
             <div class="product-detail">
                 <div class="product-detail-image">
-                    <img src="{{ url_for('static', filename=product.image) }}" alt="Mahsulot" class="product-detail-img">
+                    <img src="{{ url_for('static', filename='uploads/' + product.image) }}" alt="Mahsulot" class="product-detail-img">
                 </div>
                 
                 <div class="product-detail-info">
@@ -50,7 +50,7 @@
                         {% for pop_product in popular_products %}
                             <div class="product-card">
                                 <div class="product-image">
-                                    <img src="{{ url_for('static', filename=pop_product.image) }}" alt="Mahsulot" class="product-img">
+                                    <img src="{{ url_for('static', filename='uploads/' + pop_product.image) }}" alt="Mahsulot" class="product-img">
                                 </div>
                                 <div class="product-info">
                                     <h3> {{ pop_product.name }} </h3>
